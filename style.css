@@ -36,15 +36,41 @@ img {
 
 /* Text */
 h1 {
-    font-size: 6rem;
+    font-size: 8rem;
     color: var(--white);
 }
 
-.hero-section p {
-    font-size: 1.2rem;
-    color: var(--white);
-    padding-bottom: 16px;
+p {
+    font-size: 2rem;
+    color: var(--black); 
 }
+
+.hero-section p {
+    font-size: 1.5rem;
+    color: var(--white);
+
+}
+
+#countdown-container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 3rem;
+margin-top: 5rem;
+}
+
+.time-box {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.time-box span { 
+    font-size: 4.5rem;
+}
+
+
 
 /*Background-image*/
 .hero-section {
@@ -54,6 +80,8 @@ h1 {
     background-position: left;
     display: flex;
     align-items: flex-end;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -93,14 +121,50 @@ nav ul li {
 nav ul li a {
     color: white;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 20px;
 }
 
-.logo {
+.puc {
     height: 50px    ;
 }
 
 .title {
 padding-left: 20px ;
+}
+
+/*Logo SLO*/
+.logos {
+    width: 7rem;
+    height: 7rem;
+}
+
+/*Spielbegegnung*/
+.match {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#name-slo {
+    text-align: right;
+}
+
+#slo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+#fcsg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+.match-time-div {
+    margin-top: 5rem;
 }
