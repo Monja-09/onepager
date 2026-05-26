@@ -46,7 +46,18 @@ h2 {
     color: var(--black);
 }
 
-.green-text{
+h3{
+    font-size: 3rem;
+    color: var(--green);
+}
+
+h4{
+    font-size: 3rem;
+    color: white;
+}
+
+
+.green-text {
     color: var(--green);
 }
 
@@ -56,9 +67,7 @@ p {
 }
 
 .hero-section p {
-    font-size: 1.5rem;
     color: var(--white);
-
 }
 
 #countdown-container {
@@ -110,15 +119,15 @@ header {
 
     animation: nimmHintergrundfarbe linear;
     animation-timeline: scroll();
-    animation-range: 0px 500px; 
-    animation-fill-mode: forwards; 
+    animation-range: 0px 500px;
+    animation-fill-mode: forwards;
 }
 
 @keyframes nimmHintergrundfarbe {
     to {
-        background-color: var(--darkgreen); 
+        background-color: var(--darkgreen);
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-        padding: 20px 50px; 
+        padding: 20px 50px;
     }
 }
 
@@ -204,7 +213,7 @@ nav ul li a {
     margin-top: 5rem;
 }
 
-.grid-container > * {
+.grid-container>* {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -222,13 +231,13 @@ nav ul li a {
     aspect-ratio: 4 / 3;
 }
 
-.grid-texts {
+.titles {
     grid-column: span 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;   
+    text-align: center;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -241,20 +250,21 @@ nav ul li a {
 
 /*Fanshop Button*/
 .shop-button {
-    display: inline-block;    
-    padding: 12px 28px;       
-    margin-top: 15px;         
-    background-color: var(--green); 
-    text-decoration: none;     
-    border-radius: 4px;        
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: inline-block;
+    padding: 12px 28px;
+    margin-top: 15px;
+    background-color: var(--green);
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
 /*rollender Ball*/
-.grid-images{
+.grid-images {
     position: relative;
 }
+
 #rolling-ball {
     width: 80px;
     height: 80px;
@@ -277,4 +287,77 @@ nav ul li a {
     to {
         transform: translateX(calc(100vw - 80px)) rotate(1050deg);
     }
+}
+
+/*carousel*/
+.starting-lineup {
+    background-color: var(--white);
+    text-align: center;
+}
+
+.carousel-container {
+    width: 100%;
+    position: relative;
+    padding-top: 25px;
+}
+
+.carousel {
+    display: block;
+    height: 480px;
+    position: relative;
+    width: 100%;
+}
+
+.player-card {
+    position: absolute;
+    width: 33.3%;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, filter 0.5s ease, opacity 0.5s ease, z-index 0.5s ease;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+    opacity: 0;
+    z-index: 0;
+    filter: brightness(0%);
+}
+
+.player-card.prev {
+    transform: translateX(-135%) scale(0.85);
+    z-index: 2;
+    filter: brightness(45%);
+    opacity: 1;
+}
+
+
+.player-card.active {
+    transform: translateX(-50%) scale(1.05);
+    z-index: 5;
+    filter: brightness(100%);
+    opacity: 1;
+    cursor: default;
+    will-change: transform;
+}
+
+.player-card.next {
+    transform: translateX(35%) scale(0.85);
+    z-index: 2;
+    filter: brightness(45%);
+    opacity: 1;
+}
+
+.player-card img {
+    object-fit: cover;
+}
+
+.player-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    box-sizing: border-box
 }
