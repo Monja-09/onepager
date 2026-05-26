@@ -19,7 +19,7 @@
 html,
 body {
     font-family: "Archivo Black", sans-serif;
-    ;
+    background-color: var(--white);
 }
 
 a {
@@ -46,12 +46,12 @@ h2 {
     color: var(--black);
 }
 
-h3{
+h3 {
     font-size: 3rem;
     color: var(--green);
 }
 
-h4{
+h4 {
     font-size: 3rem;
     color: white;
 }
@@ -293,17 +293,19 @@ nav ul li a {
 .starting-lineup {
     background-color: var(--white);
     text-align: center;
+    overflow: hidden;
 }
 
 .carousel-container {
     width: 100%;
     position: relative;
     padding-top: 25px;
+    margin-bottom: 50px;
 }
 
 .carousel {
     display: block;
-    height: 480px;
+    height: 750px;
     position: relative;
     width: 100%;
 }
@@ -360,4 +362,57 @@ nav ul li a {
     padding: 20px;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
     box-sizing: border-box
+}
+
+/*Newsletter-Formular*/
+.newsletter-form {
+    padding: 60px 20px;
+    text-align: center;
+
+}
+
+.fcsg-form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444444;
+    font-size: 0.95rem;
+    font-family: sans-serif;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }

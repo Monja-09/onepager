@@ -1,204 +1,227 @@
-<DOCTYPE! html>
-    <html lang="de">
+<!DOCTYPE html>
+<html lang="de">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Embed Javascript-->
-        <script src="script.js"></script>
+    <!--Embed Javascript-->
+    <script src="script.js"></script>
 
-        <!-- Embed Stylesheet -->
-        <link rel="stylesheet" href="style.css">
+    <!-- Embed Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
-        <!-- Embed Overpass -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
+    <!-- Embed Overpass -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-        <title>FCSG</title>
-    </head>
+    <title>FCSG</title>
+</head>
 
-    <body>
+<body>
 
-        <!-- Header -->
-        <header>
-            <!-- Navigation -->
-            <nav class="nav-header">
-                <ul>
-                    <li><a href="#cuptrikot">Cuptrikot</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#newsletter">Newsletter</a></li>
-                    <li class="puc"><a href="index.html"><img src="Assets/Bilder/Pokal.svg"></a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Header -->
+    <header>
+        <!-- Navigation -->
+        <nav class="nav-header">
+            <ul>
+                <li><a href="#cuptrikot">Cuptrikot</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li class="puc"><a href="index.html"><img src="Assets/Bilder/Pokal.svg"></a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!--start-main-->
-        <main>
-            <section class="hero-section">
-                <div class="title">
-                    <h1>Cupfinal 2026!</h1>
-                    <p>Sonntag, 24.05.2026, 14 Uhr, Wankdorf</p>
-                </div>
-            </section>
+    <!--start-main-->
+    <main>
+        <section class="hero-section">
+            <div class="title">
+                <h1>Cupfinal 2026!</h1>
+                <p>Sonntag, 24.05.2026, 14 Uhr, Wankdorf</p>
+            </div>
+        </section>
 
-            <!--match & countdown-->
-            <section class="match-time-section">
-                <div class="match-time-div">
-                    
-                    <!--match-->
-                    <div class="match">
-                        <div id="slo">
-                            <p id="name-slo">FC Stade-<br>Lausanne-Ouchy</p>
-                            <img class="logos" src="Assets/Bilder/cropped-640px-FC_Stade_Lausanne_Ouchy-copie.png"
-                                alt="Logo Stade-Lausanne-Ouchy">
-                        </div>
-                        <p>VS</p>
-                        <div id="fcsg">
-                            <img class="logos" src="Assets/Bilder/logo.svg" alt="Logo FCSG">
-                            <p>FC St.Gallen 1879</p>
-                        </div>
+        <!--match & countdown-->
+        <section class="match-time-section">
+            <div class="match-time-div">
+
+                <!--match-->
+                <div class="match">
+                    <div id="slo">
+                        <p id="name-slo">FC Stade-<br>Lausanne-Ouchy</p>
+                        <img class="logos" src="Assets/Bilder/cropped-640px-FC_Stade_Lausanne_Ouchy-copie.png"
+                            alt="Logo Stade-Lausanne-Ouchy">
                     </div>
-
-                    <!--countdown-->
-                    <div id="countdown-container">
-                        <div class="time-box">
-                            <p>Tage</p>
-                            <span id="tage">00</span>
-                        </div>
-                        <div class="time-box">
-                            <p>Stunden</p>
-                            <span id="stunden">00</span>
-                        </div>
-                        <div class="time-box">
-                            <p>Minuten</p>
-                            <span id="minuten">00</span>
-                        </div>
-                        <div class="time-box">
-                            <p>Sekunden</p>
-                            <span id="sekunden">00</span>
-                        </div>
+                    <p>VS</p>
+                    <div id="fcsg">
+                        <img class="logos" src="Assets/Bilder/logo.svg" alt="Logo FCSG">
+                        <p>FC St.Gallen 1879</p>
                     </div>
                 </div>
-            </section>
 
-            <!--grid-->
-            <section class="grid-images" id="cuptrikot">
-                <img id="rolling-ball" src="Assets/Bilder/openclipart-vectors-football-157930.svg" alt="Fussball">
-                <div class="grid-container">
-                    <img src="Assets/Bilder/mottoshirt-crest.jpg" alt="Mottoshirt-crest">
-                    <img src="Assets/Bilder/mottoshirt-detail.jpg" alt="Mottoshirt-detail">
-                    <div class="titles">
-                        <h2>ALLI IN <span class="green-text">GRÜE</span> UF BERN!</h2>
-                        <a href="#" class="shop-button">Zum Fanshop</a>
+                <!--countdown-->
+                <div id="countdown-container">
+                    <div class="time-box">
+                        <p>Tage</p>
+                        <span id="tage">00</span>
                     </div>
-                    <img src="Assets/Bilder/mottoshirt-hero.jpg" alt="mottoshirt-hero">
-                    <img src="Assets/Bilder/260427_FCSG_CupBundle_07.jpg" alt="mottoshirt">
+                    <div class="time-box">
+                        <p>Stunden</p>
+                        <span id="stunden">00</span>
+                    </div>
+                    <div class="time-box">
+                        <p>Minuten</p>
+                        <span id="minuten">00</span>
+                    </div>
+                    <div class="time-box">
+                        <p>Sekunden</p>
+                        <span id="sekunden">00</span>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--Starting lineup-->
-            <section class="starting-lineup">
+        <!--grid-->
+        <section class="grid-images" id="cuptrikot">
+            <img id="rolling-ball" src="Assets/Bilder/openclipart-vectors-football-157930.svg" alt="Fussball">
+            <div class="grid-container">
+                <img src="Assets/Bilder/mottoshirt-crest.jpg" alt="Mottoshirt-crest">
+                <img src="Assets/Bilder/mottoshirt-detail.jpg" alt="Mottoshirt-detail">
                 <div class="titles">
-                    <h2>STARTAUFSTELLUNG</h2>
+                    <h2>ALLI IN <span class="green-text">GRÜE</span> UF BERN!</h2>
+                    <a href="#" class="shop-button">Zum Fanshop</a>
                 </div>
-                <div class="carousel-container">
-                    <div class="carousel">
+                <img src="Assets/Bilder/mottoshirt-hero.jpg" alt="mottoshirt-hero">
+                <img src="Assets/Bilder/260427_FCSG_CupBundle_07.jpg" alt="mottoshirt">
+            </div>
+        </section>
 
-                        <div class="player-card active">
-                            <img src="Assets/Bilder/Lukas_watkowiak.webp" alt="Lukas Watkowiak">
-                            <div class="player-info">
-                                <h3>25</h3>
-                                <h4>Lukas Watkowiak</h4>
-                            </div>
+        <!--Starting lineup-->
+        <section class="starting-lineup" id="team">
+            <div class="titles">
+                <h2>STARTAUFSTELLUNG</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+
+                    <div class="player-card active">
+                        <img src="Assets/Bilder/Lukas_watkowiak.webp" alt="Lukas Watkowiak">
+                        <div class="player-info">
+                            <h3>25</h3>
+                            <h4>Lukas Watkowiak</h4>
                         </div>
+                    </div>
 
-                        <div class="player-card">
-                            <img src="Assets/Bilder/tom gaal.webp" alt="Tom Gaal">
-                            <div class="player-info">
-                                <h3>26</h3>
-                                <h4>Tom Gaal</h4>
-                            </div>
+                    <div class="player-card">
+                        <img src="Assets/Bilder/tom gaal.webp" alt="Tom Gaal">
+                        <div class="player-info">
+                            <h3>26</h3>
+                            <h4>Tom Gaal</h4>
                         </div>
+                    </div>
 
-                        <div class="player-card">
-                            <img src="Assets/Bilder/Jozo stanic.webp" alt="Jozo Stanic">
-                            <div class="player-info">
-                                <h3>4</h3>
-                                <h4>Jozo Stanic</h4>
-                            </div>
+                    <div class="player-card">
+                        <img src="Assets/Bilder/Jozo stanic.webp" alt="Jozo Stanic">
+                        <div class="player-info">
+                            <h3>4</h3>
+                            <h4>Jozo Stanic</h4>
                         </div>
+                    </div>
 
-                        <div class="player-card">
-                            <img src="Assets/Bilder/Chima_okoroji.webp" alt="Chima Okoroji">
-                            <div class="player-info">
-                                <h3>36</h3>
-                                <h4>Chima Okoroji</h4>
-                            </div>
+                    <div class="player-card">
+                        <img src="Assets/Bilder/Chima_okoroji.webp" alt="Chima Okoroji">
+                        <div class="player-info">
+                            <h3>36</h3>
+                            <h4>Chima Okoroji</h4>
                         </div>
+                    </div>
 
-                        <div class="player-card">
-                            <img src="Assets/Bilder/Lukas_daschner.webp" alt="Lukas Daschner">
-                            <div class="player-info">
-                                <h3>10</h3>
-                                <h4>Lukas Daschner</h4>
-                            </div>
+                    <div class="player-card">
+                        <img src="Assets/Bilder/Lukas_daschner.webp" alt="Lukas Daschner">
+                        <div class="player-info">
+                            <h3>10</h3>
+                            <h4>Lukas Daschner</h4>
                         </div>
+                    </div>
 
-                        <div class="player-card">
-                            <img src="Assets/Bilder/hugo_vandermersch.webp" alt="Hugo Vandermersch">
-                            <div class="player-info">
-                                <h3>28</h3>
-                                <h4>Hugo Vandermersch</h4>
-                            </div>
+                    <div class="player-card">
+                        <img src="Assets/Bilder/hugo_vandermersch.webp" alt="Hugo Vandermersch">
+                        <div class="player-info">
+                            <h3>28</h3>
+                            <h4>Hugo Vandermersch</h4>
                         </div>
+                    </div>
 
-                        <div class="player-card">
-                            <img src="Assets/Bilder/Lukas Görtler.webp" alt="Lukas Görtler">
-                            <div class="player-info">
-                                <h3>16</h3>
-                                <h4>Lukas Görtler</h4>
-                            </div>
+                    <div class="player-card">
+                        <img src="Assets/Bilder/Lukas Görtler.webp" alt="Lukas Görtler">
+                        <div class="player-info">
+                            <h3>16</h3>
+                            <h4>Lukas Görtler</h4>
                         </div>
+                    </div>
 
-                        <div class="player-card">
-                            <img src="Assets/Bilder/Carlo boukhalfa.webp" alt="Carlo Boukhalfa">
-                            <div class="player-info">
-                                <h3>11</h3>
-                                <h4>Carlo Boukhalfa</h4>
-                            </div>
+                    <div class="player-card">
+                        <img src="Assets/Bilder/Carlo boukhalfa.webp" alt="Carlo Boukhalfa">
+                        <div class="player-info">
+                            <h3>11</h3>
+                            <h4>Carlo Boukhalfa</h4>
                         </div>
+                    </div>
 
-                        <div class="player-card">
-                            <img src="Assets/Bilder/mihailo_stevanovic.webp" alt="Mihailo Stevanovic">
-                            <div class="player-info">
-                                <h3>64</h3>
-                                <h4>Mihailo Stevanovic</h4>
-                            </div>
+                    <div class="player-card">
+                        <img src="Assets/Bilder/mihailo_stevanovic.webp" alt="Mihailo Stevanovic">
+                        <div class="player-info">
+                            <h3>64</h3>
+                            <h4>Mihailo Stevanovic</h4>
                         </div>
+                    </div>
 
-                        <div class="player-card">
-                            <img src="Assets/Bilder/alessandro vogt.webp" alt="Alessandro Vogt">
-                            <div class="player-info">
-                                <h3>18</h3>
-                                <h4>Alessandro Vogt</h4>
-                            </div>
+                    <div class="player-card">
+                        <img src="Assets/Bilder/alessandro vogt.webp" alt="Alessandro Vogt">
+                        <div class="player-info">
+                            <h3>18</h3>
+                            <h4>Alessandro Vogt</h4>
                         </div>
+                    </div>
 
-                        <div class="player-card">
-                            <img src="Assets/Bilder/Aliou Baldé.webp" alt="Aliou Baldé">
-                            <div class="player-info">
-                                <h3>14</h3>
-                                <h4>Aliou Baldé</h4>
-                            </div>
+                    <div class="player-card">
+                        <img src="Assets/Bilder/Aliou Baldé.webp" alt="Aliou Baldé">
+                        <div class="player-info">
+                            <h3>14</h3>
+                            <h4>Aliou Baldé</h4>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </body>
+            </div>
+        </section>
+        <section class="newsletter-form" id="newsletter">
+            <form action="#" method="POST" class="fcsg-form">
+                <h3>FCSG Cupfinal News</h2>
 
-    </html>
+                    <div class="input-group">
+                        <label for="firstname">Vorname:</label>
+                        <input type="text" name="firstname" placeholder="Z.B. Lukas" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="lastname">Nachname:</label>
+                        <input type="text" name="lastname" placeholder="Z.B. Görtler" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">E-Mail-Adresse:</label>
+                        <input type="email" name="email" placeholder="beispiel@domain.ch" required>
+                    </div>
+
+                    <button type="submit" class="submit-button">Jetzt anmelden</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
