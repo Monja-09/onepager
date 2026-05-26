@@ -416,3 +416,17 @@ nav ul li a {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+/*Footer*/
+footer {
+    background-color: var(--darkgreen);
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.nav-footer ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    list-style-type: none; 
+}
