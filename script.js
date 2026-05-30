@@ -35,7 +35,7 @@ const countdownTimer = setInterval(function () {
 
 //carousel
 document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".player-card");
+    const cards = document.querySelectorAll(".playerCard");
     const totalCards = cards.length;
 
     if (totalCards === 0) return;
