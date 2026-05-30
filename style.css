@@ -45,7 +45,7 @@ img {
 
 /* Text */
 h1 {
-    font-size: 11vw;
+    font-size: clamp(3rem, 11vw, 9rem);
     color: white;
 }
 
@@ -104,13 +104,13 @@ header {
     z-index: 999;
     top: 0;
 
-    animation: nimmHintergrundfarbe linear;
+    animation: adoptBackgroundColor linear;
     animation-timeline: scroll();
     animation-range: 0px 500px;
     animation-fill-mode: forwards;
 }
 
-@keyframes nimmHintergrundfarbe {
+@keyframes adoptBackgroundColor {
     to {
         background-color: var(--darkgreen);
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
