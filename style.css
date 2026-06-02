@@ -184,7 +184,6 @@ nav ul li a {
 }
 
 /*Countdown*/
-
 #countdownContainer {
     display: flex;
     flex-direction: row;
@@ -278,7 +277,7 @@ nav ul li a {
     }
 }
 
-/*carousel*/
+/*Carousel*/
 .startingLineup {
     background-color: var(--white);
     text-align: center;
@@ -347,7 +346,7 @@ nav ul li a {
 
 }
 
-/*Newsletter-Formular*/
+/*Newsletter*/
 .newsletterForm {
     padding-top: 5vw;
     padding-bottom: 5vw;
@@ -414,9 +413,10 @@ footer {
     list-style-type: none;
 }
 
+/*Responsive bis 800px breit*/
 @media (max-width: 800px) {
 
-    /* carousel */
+    /*carousel*/
     .startingLineup {
         width: 100%;
         overflow: hidden;
@@ -458,7 +458,7 @@ footer {
 
 }
 
-
+/*Responsive bis 530px breit*/
 @media (max-width: 530px) {
 
     html,
@@ -473,7 +473,7 @@ footer {
         box-sizing: border-box;
     }
 
-    /* header & navigation */
+    /*header & navigation*/
     header {
         padding: 15px 10px;
     }
@@ -516,7 +516,7 @@ footer {
         padding-left: 5px;
     }
 
-    /* Spielbegegnung*/
+    /*Spielbegegnung*/
     .matchTimeSection {
         padding: 0 15px;
         margin-top: 2rem;
@@ -543,7 +543,7 @@ footer {
         height: 4.5rem;
     }
 
-    /* countdown */
+    /*Countdown*/
     #countdownContainer {
         gap: 0.8rem;
         margin-top: 2rem;
@@ -557,7 +557,7 @@ footer {
         font-size: 1.8rem;
     }
 
-    /* grid*/
+    /*grid*/
     .gridContainer {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.8rem;
@@ -577,13 +577,13 @@ footer {
         padding: 15px 5px;
     }
 
-    /* rolling-ball */
+    /*rolling-ball*/
 
     #rollingBall {
         --ball-size: 40px;
     }
 
-    /* newsletter */
+    /*Newsletter*/
     .newsletterForm {
         padding: 30px 10px;
     }
@@ -594,6 +594,7 @@ footer {
     }
 }
 
+/*Responsive bis 420px breit*/
 @media (max-width: 410px) {
     #countdownContainer {
         flex-direction: column
